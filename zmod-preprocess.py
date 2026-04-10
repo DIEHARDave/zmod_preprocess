@@ -14,7 +14,7 @@ if len(sys.argv) < 2:
 
 file_path = sys.argv[1]
 
-with open(file_path, 'r') as f:
+with open(file_path, 'r', encoding='utf-8') as f:
     content = f.readlines()
 
 if content[0].strip().casefold().startswith('; md5'):
